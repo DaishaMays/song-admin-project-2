@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('../partials/header') %>
+<div class="container">
+<table>
     
 
 
@@ -35,7 +29,9 @@
             <tr>
               <td><%= r.songName %></td>
               
-              
+              <form action="/artists/<%= artist._id %>/songs/<%= r._id %>?_method=DELETE" method="POST">
+                <button type="submit">Delete Song</button>
+              </form> 
             </tr>
           <% }); %>
         </tbody>
@@ -43,7 +39,8 @@
     <% } else { %>
       <h5>No Songs Yet</h5>
     <% } %>
-
+    
+    
 
     <br><br><h2>Add a Song</h2>
 <form id="add-song-form" method="POST"
@@ -54,15 +51,6 @@
   <input type="submit" value="Add Song">
 </form>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=!, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
 
 
 
@@ -70,8 +58,7 @@
 <a href="/artists">Add New Artist</a>
 <input type="submit" value="Log Out">
   
-</body>
-</html>
+</table>
+</div>
 
-</body>
-</html>
+<%- include('../partials/footer') %>

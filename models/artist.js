@@ -19,6 +19,7 @@ const artistSchema = new Schema({
 
 
 module.exports = { 
-  Song: mongoose.model("Song", songSchema),
-  Artist: mongoose.model("Artist", artistSchema)
+  Artist: mongoose.model("Artist", artistSchema),
+  Song: mongoose.model("Song", songSchema)
+  
 }

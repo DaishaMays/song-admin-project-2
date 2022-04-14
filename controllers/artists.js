@@ -1,4 +1,4 @@
-const Artist = require('../models/artist');
+const {Artist} = require('../models/artist');
 
 module.exports = {
     index,
@@ -6,6 +6,8 @@ module.exports = {
     create,
     new: newArtist
 };
+
+
 
 
 function index(req, res) {
@@ -21,7 +23,7 @@ function show(req, res) {
 }
 
 function newArtist (req, res) {
-    const newArtist=new Artist()
+    
     Artist.find(req.params.id, function(err, artists) {
         res.render('artists/new', { artists });
         });
@@ -34,8 +36,6 @@ function create(req, res) {
         console.log(err);
     if (err) return res.render('artists');
     console.log('Your Form is working');
-    
-    
     res.redirect(`/artists/${artist._id}`);
 
 })};

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    
+    <section id="show-page">
+        <div>Artist Name: </div>
+        <div><%= artist.artistname %></div>
+        <div>Email: </div>
+        <div><%= artist.email %></div>
+        <div>Website: </div>
+        <div><%= artist.website %></div>
+        <div>IPI #: </div>
+        <div><%= artist.IPINo %></div>
+    </section>
+
+    <% if (artist.songs.length) { %>
+      <table>
+        <thead>
+          <tr>
+            <th>Song</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <% artist.songs.forEach(function(r) { %>
+            <tr>
+              <td><%= r.songName %></td>
+              
+              
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <h5>No Songs Yet</h5>
+    <% } %>
+
+
+    <br><br><h2>Add a Song</h2>
+<form id="add-song-form" method="POST"
+  action="/artists/<%= artist._id %>/songs">
+  <label>Song:</label>
+  <textarea name="songName"></textarea>
+  
+  <input type="submit" value="Add Song">
+</form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=!, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  
+<a href="/artists">Add New Artist</a>
+<input type="submit" value="Log Out">
+  
+</body>
+</html>
+
+</body>
+</html>

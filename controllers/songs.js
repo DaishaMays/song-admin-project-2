@@ -18,9 +18,9 @@ console.log(`songs:${artistFromTheDatabase.songs}`)
 }
 
 function deleteSong(req, res){
-   Artist.findById(req.params.id,function(err, artistDocument){
+Artist.findById(req.params.id,function(err, artistDocument){
     artistDocument.songs.pull({_id: req.params.songId}); 
     artistDocument.save(function(err){
         res.redirect(`/artist/${artistDocument._id}`)
     })
-   })}
+})}

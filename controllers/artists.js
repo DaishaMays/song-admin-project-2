@@ -9,9 +9,7 @@ module.exports = {
 
 
 function index(req, res) {
-    Artist.find({}, function(err, artists) {
-    res.render('artists/index', { artistname: 'Artist Database', artists });
-    });
+    res.render('artists/index', { title: 'new-form' });
 }
 
 
@@ -23,7 +21,8 @@ function show(req, res) {
 }
 
 function newArtist (req, res) {
-    Artist.find({}, function(err, artists) {
+    const newArtist=new Artist()
+    Artist.find(req.params.id, function(err, artists) {
         res.render('artists/new', { artists });
         });
 }

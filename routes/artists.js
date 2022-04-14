@@ -6,7 +6,7 @@ const artistsCtrl = require('../controllers/artists');
 router.get('/', artistsCtrl.index);
 //Post Route
 router.post('/', artistsCtrl.create);
-router.get('/new', artistsCtrl.new);
+router.get('/new/', artistsCtrl.new);
 router.get('/:id', artistsCtrl.show);
 
 

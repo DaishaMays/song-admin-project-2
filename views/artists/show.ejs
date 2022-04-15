@@ -2,7 +2,7 @@
 <div class="container">
 <table>
     
-
+  <h1>Artist Details</h1>
 
     
     <section id="show-page">
@@ -16,7 +16,12 @@
         <div><%= artist.ipiNo %></div>
         <div class="btn"> <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
           <button type="submit">Delete Artist</button>
-        </form> </div>
+        </form>
+        <form action="/artists">
+          <input type="submit" value="Add New Artist" />
+      </form>
+      </div>
+        
     </section>
 
     <% if (artist.songs.length) { %>
@@ -31,11 +36,10 @@
           <% artist.songs.forEach(function(r) { %>
             <tr>
               <td><%= r.songName %></td>
-              
-              <form action="/artists/<%= artist._id %>/songs/<%= r._id %>?_method=DELETE" method="POST">
-                <button type="submit">Delete Song</button>
-              </form> 
             </tr>
+            <form action="/artists/<%= artist._id %>/songs/<%= r._id %>?_method=DELETE" method="POST">
+              <button type="submit">Delete Song</button>
+            </form> 
           <% }); %>
         </tbody>
       </table>
@@ -55,10 +59,6 @@
 </form>
 
 
-
-
-  
-<a href="/artists">Add New Artist</a>
   
 </table>
 </div>

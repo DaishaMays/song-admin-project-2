@@ -18,13 +18,13 @@ With advancements in technology there has been a signficant rise in independent 
 
 #### Technologies Used: 
 
--HTML
--CSS
--JAVASCRIPT
--BOOTSTRAP
--MONGOOSE
--EXPRESS
--GOOGLE CLOUD
+- HTML
+- CSS
+- JAVASCRIPT
+- BOOTSTRAP
+- MONGOOSE
+- EXPRESS
+- GOOGLE CLOUD
 
 
 #### Getting Started:

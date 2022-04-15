@@ -47,5 +47,6 @@ Next Steps:
 - I want to add a button that allows me to upload a mp3 of my song.
 - I want add a button that takes me to a song registration checklist.
 - I want add a button that allows me to add album artwork to my song with multiple.
+- i want to add a button that will use all the info from the database to fill out forms on royalty collection sites.
 - I want to update the css
 

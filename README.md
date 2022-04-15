@@ -18,8 +18,16 @@
 
 #### Technologies Used: 
 
-#### Getting Started:
+HTML
+CSS
+JAVASCRIPT
+BOOTSTRAP
+MONGOOSE
+EXPRESS
+GOOGLE CLOUD
+
 
 #### Getting Started:
+
 
 Next Steps: 

@@ -20,11 +20,12 @@ With advancements in technology there has been a signficant rise in independent 
 
 - HTML
 - CSS
-- JAVASCRIPT
+- NODE.JS/ JAVASCRIPT
 - BOOTSTRAP
 - MONGOOSE
 - EXPRESS
 - GOOGLE CLOUD
+- HEROKU
 
 
 #### Getting Started:

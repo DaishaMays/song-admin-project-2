@@ -6,15 +6,15 @@
 
     
     <section id="show-page">
-        <div>Artist Name: </div>
+        <div class="title">Artist Name: </div>
         <div><%= artist.artistname %></div>
-        <div>Email: </div>
+        <div class="title" >Email: </div>
         <div><%= artist.email %></div>
-        <div>Website: </div>
+        <div class="title">Website: </div>
         <div><%= artist.website %></div>
-        <div>IPI #: </div>
-        <div><%= artist.IPINo %></div>
-        <div> <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
+        <div class="title">IPI #: </div>
+        <div><%= artist.ipiNo %></div>
+        <div class="btn"> <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
           <button type="submit">Delete Artist</button>
         </form> </div>
     </section>
@@ -45,7 +45,7 @@
     
     
 
-    <br><br><h2>Add a Song</h2>
+<h2>Add a Song</h2>
 <form id="add-song-form" method="POST"
   action="/artists/<%= artist._id %>/songs">
   <label>Song:</label>
@@ -59,7 +59,6 @@
 
   
 <a href="/artists">Add New Artist</a>
-<input type="submit" value="Log Out">
   
 </table>
 </div>

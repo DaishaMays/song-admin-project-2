@@ -14,6 +14,9 @@
         <div><%= artist.website %></div>
         <div>IPI #: </div>
         <div><%= artist.IPINo %></div>
+        <div> <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete Artist</button>
+        </form> </div>
     </section>
 
     <% if (artist.songs.length) { %>

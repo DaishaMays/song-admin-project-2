@@ -4,12 +4,18 @@ module.exports = {
     index,
     show,
     create,
-    new: newArtist
+    new: newArtist,
+    delete: deleteArtist
 };
 
 
 
-
+function deleteArtist(req, res){
+    
+    Artist.findOneAndDelete({_id: req.params.id}, function(err){
+        res.redirect('/artists/new')
+    })
+}
 function index(req, res) {
     res.render('artists/index', { title: 'new-form' });
 }

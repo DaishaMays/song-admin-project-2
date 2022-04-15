@@ -8,6 +8,8 @@ router.get('/', artistsCtrl.index);
 router.post('/', artistsCtrl.create);
 router.get('/new/', artistsCtrl.new);
 router.get('/:id', artistsCtrl.show);
+router.delete('/:id', artistsCtrl.delete);
+
 
 
 

@@ -1,8 +1,11 @@
 <%- include('./partials/header') %>
     <h1><%= title %></h1>
-    <p>Lets get started!</p>
-    <div class="homelogin"><a href="/auth/google" class="login">Log In &nbsp;</a></div>
     
+    <h2>Are you collecting all of your royalties?</h2>
     
-   
- <%- include('./partials/footer') %>
+    <form action="/auth/google">
+        <input type="submit" value="Let's Get Started" />
+    </form>
+
+    
+<%- include('./partials/footer') %>

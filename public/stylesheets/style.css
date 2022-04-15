@@ -3,19 +3,20 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.homelogin{
-  margin: auto;
-  width: 50%;
-  border: 3px solid #be3dfe;
-  padding: 10px;
+form{
+  display: grid;
+  width: 25%;
+  padding: 50px;
   text-align: center;
-}
+  margin:auto
+  
+} 
 
 h2{
   padding-top: 20px;
   text-align: center;
   margin: auto;
-  color: #be3dfe;
+  color: #010001;
 }
 
 p{
@@ -93,8 +94,10 @@ table, th, td {
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 100px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
     text-align: center;
+    border-color: #49025d;
+    border-style: solid;
 }
 
 .container{

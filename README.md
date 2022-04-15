@@ -2,7 +2,7 @@
 
 
 
-## App Title:
+## Soundtrackam is a database that stores all of your songs publishing information in places.
 
 
 #### Screenshot(s): 

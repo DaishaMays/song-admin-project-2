@@ -43,8 +43,8 @@ https://trello.com/invite/b/5neKcdkR/85d2709e27636c6a0388caf58ce7241f/song-admin
 
 Next Steps: 
 
-I want to add a button on the artist detail page that allows me to edit a song.
-I want to add a button that allows me to upload a mp3 of my song.
-I want add a button that takes me to a song registration checklist.
-I want add a button that allows me to add album artwork to my song with multiple.
+- I want to add a button on the artist detail page that allows me to edit a song.
+- I want to add a button that allows me to upload a mp3 of my song.
+- I want add a button that takes me to a song registration checklist.
+- I want add a button that allows me to add album artwork to my song with multiple.
 

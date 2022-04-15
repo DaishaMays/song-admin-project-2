@@ -23,14 +23,13 @@ With advancements in technology there has been a signficant rise in independent 
 
 - HTML
 - CSS
-- NODE.JS/ JAVASCRIPT
+- NODE.JS
 - BOOTSTRAP
 - MONGOOSE
 - EXPRESS
-- GOOGLE CLOUD
 - GOOGLE Oauth 2.0
 - HEROKU
-- Passport
+- PASSPORT
 
 
 #### Getting Started:

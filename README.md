@@ -29,5 +29,12 @@ GOOGLE CLOUD
 
 #### Getting Started:
 
+https://soundtrackam.herokuapp.com/
+
+https://whimsical.com/song-admin-project-2-GAUAZG1n8FMUKnxAK7dE6U
+
+https://trello.com/invite/b/5neKcdkR/85d2709e27636c6a0388caf58ce7241f/song-admin-user-stories-project-2
+
+
 
 Next Steps: 

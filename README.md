@@ -52,4 +52,5 @@ Next Steps:
 - I want to update the css
 - I want to add a place to upload splitsheets and contracts tied to the song.
 - Add a form to song with more fields
+- Help section for certain fields that explains why the info is important and what it is
 

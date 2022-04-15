@@ -6,7 +6,10 @@ With advancements in technology there has been a signficant rise in independent 
 
 
 
-#### Screenshot(s): 
+![logo](https://user-images.githubusercontent.com/89038713/163595990-96eb4565-5291-45ac-a5a5-0c9476ec46d6.png)
+
+
+#### Screenshot(s):
 
 <img width="1437" alt="Screen Shot 2022-04-15 at 11 34 01 AM" src="https://user-images.githubusercontent.com/89038713/163590584-270bb0d9-1795-4e3c-92c7-88ee4ebda660.png">
 

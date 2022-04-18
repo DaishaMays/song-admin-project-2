@@ -5,7 +5,9 @@ module.exports = {
     show,
     create,
     new: newArtist,
-    delete: deleteArtist
+    delete: deleteArtist,
+    update
+    
 };
 
 
@@ -41,9 +43,24 @@ function create(req, res) {
     artist.save(function(err) {
         console.log(err);
     if (err) return res.render('artists');
-    console.log('Your Form is working');
     res.redirect(`/artists/${artist._id}`);
 
 })};
+
+function update(req, res) {
+    Artist.findOneAndUpdate(
+      {_id: req.params.id},
+      // update object with updated properties
+      req.body,
+      // options object with new: true to make sure updated doc is returned
+      {new: true},
+      function(err, artist) {
+        if (err || !artist) return res.redirect('/artists');
+        res.redirect(`/artists/${artist._id}`);
+      }
+    );
+  }
+
+
 
 

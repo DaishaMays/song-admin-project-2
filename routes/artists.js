@@ -9,6 +9,7 @@ router.post('/', artistsCtrl.create);
 router.get('/new/', artistsCtrl.new);
 router.get('/:id', artistsCtrl.show);
 router.delete('/:id', artistsCtrl.delete);
+router.put('/:id', artistsCtrl.update);
 
 
 

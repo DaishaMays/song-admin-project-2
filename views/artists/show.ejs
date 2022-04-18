@@ -14,12 +14,38 @@
         <div><%= artist.website %></div>
         <div class="title">IPI #: </div>
         <div><%= artist.ipiNo %></div>
-        <div class="btn"> <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
-          <button type="submit">Delete Artist</button>
-        </form>
-        <form action="/artists">
+        
+      <div class="btn">
+      
+      <form action="/artists/<%= artist._id %>?_method=DELETE" method="POST">
+          <button style="height: 60px;">DELETE</button>
+      </form>
+      
+      <form action="/artists">
           <input type="submit" value="Add New Artist" />
       </form>
+      
+      
+      </div>
+
+      <h2>Make Changes to Artist</h2>
+
+      <div class="update">
+      <form action="/artists/<%= artist._id %>?_method=PUT" method="POST">
+        <div class="title">Artist Name: </div>
+          <input name="artistname" value="<%= artist.artistname %>">
+
+        <div class="title">Email: </div>
+          <input name="email" value="<%= artist.email %>">
+
+        <div class="title">Website: </div>
+          <input name="website" value="<%= artist.website %>">
+
+        <div class="title">IPI #: </div>
+          <input name="ipiNo" value="<%= artist.ipiNo %>">
+        
+        <button type="submit">Update</button>
+        </form>
       </div>
         
     </section>
@@ -35,11 +61,13 @@
         <tbody>
           <% artist.songs.forEach(function(r) { %>
             <tr>
-              <td><%= r.songName %></td>
+              <td><%= r.songName %> 
+                <form class= "songdelete" action="/artists/<%= artist._id %>/songs/<%= r._id %>?_method=DELETE" method="POST">
+                  <button style="height: 35px;">X</button>
+                </form>
+              </td>
             </tr>
-            <form action="/artists/<%= artist._id %>/songs/<%= r._id %>?_method=DELETE" method="POST">
-              <button type="submit">Delete Song</button>
-            </form> 
+            
           <% }); %>
         </tbody>
       </table>

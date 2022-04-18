@@ -3,6 +3,17 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+input{
+  text-align: center;
+}
+
+
+.update{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .copyright{
   display:flex;
   position: fixed;
@@ -13,18 +24,13 @@ body {
 form{
   display: grid;
   width: 25%;
-  padding: 50px;
+  padding: 15px;
   text-align: center;
-  margin:auto
+  margin:auto;
+  justify-content: center;
   
 } 
 
-h2{
-  padding-top: 20px;
-  text-align: center;
-  margin: auto;
-  color: #010001;
-}
 
 p{
   text-align: center;
@@ -41,9 +47,10 @@ h1{
 }
 
 h2{
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 70px;
   text-align: center;
-  margin: auto; 
+  
 }
 
 a {
@@ -74,7 +81,6 @@ a {
 
 label, input {
   display: block;
-  margin-top: 20px;
 }
 
 label {
@@ -99,9 +105,9 @@ table, th, td {
   border-collapse: collapse;
     margin: auto;
     margin: 10px 0;
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: sans-serif;
-    min-width: 100px;
+    min-width: 75%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
     text-align: center;
     border-color: #49025d;
@@ -117,7 +123,7 @@ table, th, td {
 
 section, #show-page{
   display:grid;
-  justify-items: start;
+  justify-items: center;
 }
 
 .title{
@@ -129,22 +135,6 @@ section, #show-page{
   margin-top: 10px;
 }
 
-button{
-  outline:none;
-  border: none;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  background-color: #950dd9;
-  font-size: 16px;
-  font-weight: 300px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 15px 30px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  box-shadow: 0 6px #49025d;}
 
   input[type=submit]{
     outline:none;
@@ -158,20 +148,38 @@ button{
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 15px 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 10px 30px;
     box-shadow: 0 6px #49025d;
 
   }
 
-  .btn{
+  div.btn{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: stretch;
   }
 
  
 
   h5{
     padding-top: 20px;
+  }
+
+  button{
+    text-align: center;
+    margin-top: 50px;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: #950dd9;
+    font-size: 16px;
+    font-weight: 300px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 15px;
+    box-shadow: 0 6px #49025d;
   }
